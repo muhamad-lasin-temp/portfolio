@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Oswald", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans antialiased bg-gray-50 text-gray-900;
+  }
+}
+
+/* Prevent layout shifts from scrollbar on windows */
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f3ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #5D3FD3;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4c31b0;
+}
+
+/* Ensure 3D perspective works on tilt cards */
+.group {
+  transform-style: preserve-3d;
+}
+
+/* Hover scale for images in project cards */
+.group-hover\:scale-108:is(.group:hover *) {
+  --tw-scale-x: 1.08;
+  --tw-scale-y: 1.08;
+  transform: var(--tw-transform);
+}
+
+/* Smooth transition for all motion elements */
+*, *::before, *::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
