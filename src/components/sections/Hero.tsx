@@ -94,7 +94,7 @@ export default function Hero() {
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
               className="flex justify-end lg:mr-2 xl:mr-4"
             >
-            <span className="block text-[80px] sm:text-[100px] md:text-[110px] lg:text-[140px] xl:text-[140px] font-display font-bold leading-[0.9] text-[#1a1a1a] tracking-tighter">
+            <span className="block text-[80px] sm:text-[100px] md:text-[110px] lg:text-[140px] xl:text-[140px] font-display font-bold leading-[0.9] text-[#1a1a1a] tracking-tight">
               <DecryptedText text="SOFTWARE" animateOn="view" speed={60} maxIterations={12} revealDirection="start" />
             </span>
             </motion.div>
@@ -109,7 +109,7 @@ export default function Hero() {
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
               className="flex flex-col justify-start mt-3 lg:mt-0 lg:ml-2 xl:ml-4"
             >
-            <span className="block text-[80px] sm:text-[100px] md:text-[110px] lg:text-[140px] xl:text-[140px] font-display font-bold leading-[0.9] text-[#1a1a1a] tracking-tighter">
+            <span className="block text-[80px] sm:text-[100px] md:text-[110px] lg:text-[140px] xl:text-[140px] font-display font-bold leading-[0.9] text-[#1a1a1a] tracking-tight">
               <DecryptedText text="ENGINEER" animateOn="view" speed={60} maxIterations={12} revealDirection="end" />
             </span>
               <h1 className="text-xl sm:text-2xl font-display font-semibold tracking-tight text-gray-900 mt-6 mb-3 text-center mx-auto">
