@@ -22,7 +22,7 @@ export default function LiveWebsites() {
       status: "Live"
     },
     {
-      name: "Restaurant Website",
+      name: "Nanay's Luto Restaurant",
       url: "https://nanaysluto.vercel.app/",
       status: "Live"
     }

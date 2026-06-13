@@ -117,12 +117,12 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: 'Current',
     description: 'I build end-to-end business applications — accounting systems, CRM platforms, and HR software — owning the full lifecycle from requirements to deployment. I also integrate AI & ML technologies into ERP systems.',
     responsibilities: [
-      { label: 'System Architecture', text: 'Designing scalable microservices.' },
+      { label: 'System Architecture', text: 'Architecting robust business applications.' },
       { label: 'Frontend Dev', text: 'Building responsive React/Next.js interfaces.' },
-      { label: 'Backend Dev', text: 'Robust Node.js & Python API development.' },
+      { label: 'Backend Dev', text: 'Robust Laravel & Python API development.' },
       { label: 'AI Integration', text: 'Embedding ML models into business workflows.' },
       { label: 'Project Management', text: 'Leading agile teams and client requirements.' },
-      { label: 'Cloud Deployment', text: 'Managing AWS/GCP pipelines.' }
+      { label: 'Cloud Deployment', text: 'Managing VPS deployments.' }
     ]
   }
 ];

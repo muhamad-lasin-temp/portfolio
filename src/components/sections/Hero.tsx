@@ -74,7 +74,7 @@ export default function Hero() {
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
           </span>
           <span className="text-[11px] font-sans font-medium text-gray-700 tracking-wider uppercase">
-            <DecryptedText text="Software Engineer · Dubai, UAE 🇦🇪" animateOn="view" speed={40} maxIterations={15} />
+            <DecryptedText text="Software Engineer · Dubai, UAE" animateOn="view" speed={40} maxIterations={15} />
           </span>
         </motion.div>
 

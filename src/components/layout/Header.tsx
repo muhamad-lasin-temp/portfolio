@@ -103,7 +103,7 @@ export default function Header() {
                 <button
                   key={item.id}
                   onClick={(e) => { e.stopPropagation(); scrollToSection(item.id); }}
-                  className={`relative px-4 py-1.5 rounded-full text-xs font-medium tracking-wide whitespace-nowrap transition-all ${
+                  className={`relative px-4 py-1.5 rounded-full text-xs font-medium tracking-wide whitespace-nowrap transition-all cursor-pointer ${
                     activeSection === item.id 
                       ? 'text-gray-900 bg-gray-100/80 backdrop-blur-sm' 
                       : 'text-gray-500 hover:text-gray-900'
