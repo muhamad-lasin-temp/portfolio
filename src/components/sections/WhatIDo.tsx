@@ -144,30 +144,11 @@ export default function WhatIDo() {
 
             {/* Mobile Animated Image elements */}
             <div className="flex justify-center items-center relative py-10 lg:hidden">
-              {/* Background offset purple frame */}
-              <motion.div
-                initial={{ opacity: 0, rotate: 0 }}
-                whileInView={{ opacity: 0.9, rotate: 3 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute w-72 h-[340px] sm:w-[410px] sm:h-[430px] bg-[#5D3FD3] rounded-3xl -mr-3 -mb-3 z-0 shadow-lg pointer-events-none"
-              />
 
-              {/* Main Workspace Frame — 3D tilt on hover */}
-              <motion.div
-                initial={{ opacity: 0, rotate: -6, y: 20 }}
-                whileInView={{ opacity: 1, rotate: -3, y: 0 }}
-                viewport={{ once: true }}
-                whileHover={{
-                  rotate: 0,
-                  scale: 1.03,
-                  rotateY: 4,
-                  rotateX: -2,
-                }}
-                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                style={{ transformPerspective: 1000 }}
-                className="relative w-72 h-[340px] sm:w-[410px] sm:h-[430px] bg-neutral-100 rounded-3xl overflow-hidden z-10 border-4 border-white cursor-pointer"
-                id="tilted-workspace-card"
+              {/* Main Workspace Frame */}
+              <div
+                className="relative w-[80vw] max-w-[280px] h-[320px] sm:max-w-[410px] sm:h-[430px] bg-neutral-100 rounded-3xl overflow-hidden z-10 border-4 border-white shadow-sm"
+                id="static-workspace-card"
               >
                 <img
                   src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800"
@@ -181,7 +162,7 @@ export default function WhatIDo() {
                     Development Environment
                   </span>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </FadeInWhenVisible>
         </div>

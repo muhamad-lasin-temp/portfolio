@@ -129,7 +129,7 @@ export function AnimatedTestimonials({
           </motion.div>
 
           {/* Right side: Testimonial cards */}
-          <motion.div variants={itemVariants} className="relative h-full md:mr-10 min-h-[350px] md:min-h-[400px]">
+          <motion.div variants={itemVariants} className="relative h-full md:mr-10 min-h-[420px] md:min-h-[400px]">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.id}

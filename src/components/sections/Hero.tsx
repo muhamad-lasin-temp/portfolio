@@ -58,8 +58,7 @@ export default function Hero() {
         className="absolute bottom-1/4 -right-64 w-[500px] h-[500px] bg-violet-200/25 rounded-full blur-3xl pointer-events-none"
       />
 
-      <motion.div
-        style={{ y: contentY, opacity: opacityOut }}
+      <div
         className="w-full max-w-[1400px] mx-auto px-6 flex flex-col items-center relative z-10 text-center"
       >
         {/* Available Badge */}
@@ -95,7 +94,7 @@ export default function Hero() {
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
               className="flex justify-end lg:mr-2 xl:mr-4"
             >
-            <span className="block text-[80px] sm:text-[100px] md:text-[110px] lg:text-[140px] xl:text-[140px] font-display font-bold leading-[0.8] text-[#1a1a1a] tracking-tighter">
+            <span className="block text-[80px] sm:text-[100px] md:text-[110px] lg:text-[140px] xl:text-[140px] font-display font-bold leading-[0.9] text-[#1a1a1a] tracking-tighter">
               <DecryptedText text="SOFTWARE" animateOn="view" speed={60} maxIterations={12} revealDirection="start" />
             </span>
             </motion.div>
@@ -108,9 +107,9 @@ export default function Hero() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-              className="flex flex-col justify-start lg:ml-2 xl:ml-4"
+              className="flex flex-col justify-start mt-3 lg:mt-0 lg:ml-2 xl:ml-4"
             >
-            <span className="block text-[80px] sm:text-[100px] md:text-[110px] lg:text-[140px] xl:text-[140px] font-display font-bold leading-[0.8] text-[#1a1a1a] tracking-tighter">
+            <span className="block text-[80px] sm:text-[100px] md:text-[110px] lg:text-[140px] xl:text-[140px] font-display font-bold leading-[0.9] text-[#1a1a1a] tracking-tighter">
               <DecryptedText text="ENGINEER" animateOn="view" speed={60} maxIterations={12} revealDirection="end" />
             </span>
               <h1 className="text-xl sm:text-2xl font-display font-semibold tracking-tight text-gray-900 mt-6 mb-3 text-center mx-auto">
@@ -123,17 +122,13 @@ export default function Hero() {
           </div>
 
           {/* Portrait block with floating element (Mobile Only) */}
-          <motion.div
-            style={{ y: smoothPortraitY }}
-            className="relative z-10 flex flex-col items-center mx-4 mt-12 lg:hidden"
-          >
+          <div className="relative z-10 flex flex-col items-center mx-4 mt-12 lg:hidden">
             {/* Profile Image with subtle outline/frame (Mobile Only) */}
             <motion.div
-              initial={{ opacity: 0, y: 40, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              whileHover={{ scale: 1.02, rotate: 1 }}
-              className="w-64 h-80 sm:w-72 sm:h-[400px] rounded-2xl border-4 border-white flex items-center justify-center bg-gray-100 relative"
+              className="w-64 h-80 sm:w-72 sm:h-[400px] rounded-2xl border-4 border-white flex items-center justify-center bg-gray-100 relative shadow-xl"
               id="hero-portrait-frame"
             >
               <div className="w-full h-full rounded-[12px] overflow-hidden">
@@ -183,11 +178,11 @@ export default function Hero() {
               </motion.div>
 
             </motion.div>
-          </motion.div>
+          </div>
         </div>
 
 
-      </motion.div>
+      </div>
 
       {/* Decorative vertical lines on sides */}
       <div className="absolute left-10 top-0 bottom-0 w-[1px] bg-gray-100 hidden lg:block" />
